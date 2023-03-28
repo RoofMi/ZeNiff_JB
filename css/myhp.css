@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'MYHaemalgeunSangsang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/MYHaemalgeunSangsang.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'twaysky';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twaysky.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'twaysky';
+}
+
+header{
+    width:100%;
+    height: 60px;
+    background-color: rgb(236, 242, 255);
+    position: fixed;
+    top:0;
+    z-index: 10;
+}
+
+nav {
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    padding-top: 20px;
+}
+
+#topMenu {
+    height: 40px;
+}
+
+@media screen and (max-width: 1480px) {
+    #topMenu > li {
+        display: none;
+    }
+}
+
+#topMenu > li{
+    display: inline-block;
+    position: relative;
+}
+
+#topMenu > li > a{
+    display: block;
+    color: rgb(191, 171, 226);
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px 25px;
+}
+
+#topMenu>li>a:hover{
+    color: rgb(101, 93, 187);
+}
+
+#container {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.home {
+    background-size: cover;
+    background-image: url('../image/test.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    height: 100vh;
+}
+
+footer{
+    width: 100%;
+    height: 110%;
+    background-color: gray;  
+    justify-content: center;
+    font-size:15px;
+}
+
+footer>div{
+    display: inline-block;
+    margin:20px;
+   
+}
+
+footer>div:nth-child(1){
+    padding-right:40px ;
+    border-right:4px solid #fff;    
+}
+
+footer>div>span{
+    color:white;
+}
