@@ -19,6 +19,10 @@
     font-style: normal;
 }
 
+html {
+    scroll-behavior:smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -29,20 +33,32 @@
 header{
     width:100%;
     height: 60px;
-    background-color: rgb(236, 242, 255);
+    background-color: rgb(255, 255, 255, .5);
     position: fixed;
     top:0;
     z-index: 10;
+    -webkit-transition-duration:0.8s;
+    -webkit-transition-timing-function:ease;
+    transition-duration:0.8s;
+    transition-timing-function:ease;
 }
 
-nav {
+.header_down {
+    background-color: rgb(255, 255, 255);
+    -webkit-transition-duration:0.8s;
+    -webkit-transition-timing-function:ease;
+    transition-duration:0.8s;
+    transition-timing-function:ease;
+}
+
+nav {   
     text-align: center;
     width: 100%;
     height: 60px;
     padding-top: 20px;
 }
 
-#topMenu {
+.topMenu {
     height: 40px;
 }
 
@@ -52,35 +68,133 @@ nav {
     }
 }
 
-#topMenu > li{
+.topMenu > li{
     display: inline-block;
     position: relative;
 }
 
-#topMenu > li > a{
+.topMenu > li > a{
     display: block;
-    color: rgb(191, 171, 226);
+    color: rgb(101, 93, 187);
     font-size: 17px;
     font-weight: 600;
     padding: 10px 25px;
 }
 
-#topMenu>li>a:hover{
-    color: rgb(101, 93, 187);
+.topMenu>li>a:hover{
+    color: rgb(59, 41, 254);
 }
 
-#container {
-    margin-top: 60px;
-    text-align: center;
+.scroll_bar {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(255, 255, 255, .6);
+    -webkit-transition-duration:0.8s;
+    -webkit-transition-timing-function:ease;
+    transition-duration:0.8s;
+    transition-timing-function:ease;
 }
 
-.home {
+.scroll_bar_ing {
+    position: absolute;
+    height: 5px;
+    background-color: rgb(101, 93, 187);
+}
+
+.scroll_bar_down {
+    -webkit-transition-duration:0.8s;
+    -webkit-transition-timing-function:ease;
+    transition-duration:0.8s;
+    transition-timing-function:ease;
+    background-color: rgb(182, 205, 255);
+}
+
+.section {
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'MYHaemalgeunSangsang';
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+
+.section_home {
     background-size: cover;
-    background-image: url('../image/test.png');
+    background-image: url('../image/bamboo.jpg');
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
     height: 100vh;
+    max-height: 2040px;
+}
+
+.section_about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(236, 242, 255);
+    height: 100vh;
+}
+
+.section_project {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+}
+
+.project {
+    margin: 30px auto;
+    display: flex;
+    padding: 35px;
+    border-radius: 20px;
+    background-color: antiquewhite;
+    box-shadow: 0px 4px 4px rgb(0, 0, 0, 25%);
+}
+
+.project_left {
+    display: block;
+}
+
+.project_img {
+    border-radius: 15px;
+    width: 450px;
+    margin-bottom: 25px;
+    position: top;
+}
+
+.project_bt {
+    cursor: pointer;
+    padding: 10px 172px;
+    border-radius: 15px;
+    background-color: rgb(101, 93, 187);
+    border: solid 2px rgb(101, 93, 187);
+    color: white;
+    font-size: 20px;
+    position: bottom;
+}
+
+.section_contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(236, 242, 255);
+    height: 70vh;
+}
+
+.contact_icon{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.contact_icon > a > img {
+    width: 65px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer{

@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="ko">
+  
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script src="./js/main.js"></script>
 
 <head>
   <link rel="stylesheet" href="css/myhp.css" />
@@ -13,28 +16,70 @@
 
   <header>
     <nav>
-      <ul id="topMenu">
+      <ul class="topMenu">
         <li>
-            <a href="myhp.html#hr_ZeNiff" style="background-color: white; color: rgb(101, 93, 187)">ZeNiff</a>
+          <a href="#section_home">ZeNiff</a>
         <li>
-          <a href="locate.html">About</a>
+          <a href="#section_about">About</a>
         </li>
 
         <li>
-          <a href="facilities.html">Skill</a>
+          <a href="#section_project">Project</a>
         </li>
 
         <li>
-          <a href="cheonji.html">Contact</a>
+          <a href="#section_contact">More</a>
         </li>
         
       </ul>
     </nav>
+
+    <div class="scroll_bar">
+      <span class="scroll_bar_ing" style="width: 0%;"></span>
+    </div>
   </header>
-  <div id="container">
-    <a id="hr_ZeNiff"></a>
-    <section class="home">
-      <p>aaa</p>
+
+  <div class="section">
+    <a id="section_home"></a>
+    <section class="section_home">
+    </section>
+
+    <a id="section_about"></a>
+    <section class="section_about">
+      <h1>About Me.</h1>
+      <div>
+        <dl>
+          <dt>Name: </dt>
+          <dd>이정배</dd>
+        </dl>
+      </div>
+    </section>
+
+    <a id="section_project"></a>
+    <section class="section_project">
+      <h1>Project.</h1>
+      <article class="project">
+        <div class="project_left">
+          <img class="project_img" src="./image/test.png">
+          <button class="project_bt" type="button" onclick="location.href='https://naver.com';" target="_blank">자세히 보기
+          </button>
+        </div>
+        <div>
+          <h3>test</h3>
+          <h4>tset2</h4>
+        </div>
+      </article>
+
+    </section>
+
+    <a id="section_contact"></a>
+    <section class="section_contact">
+      <h1>View More.</h1>
+      <ul class="contact_icon">
+        <a href="http://github.com/RoofMi" target="_blank">
+          <img src="./image/github.svg">
+        </a>
+      </ul>
     </section>
     
   </div>
@@ -44,8 +89,6 @@
       <span>Copyright 2023. ZeNiff. All rights reserved</span>
     </div>
   </footer>
-
-  <script src="./js/facilities_script.js"></script>
 </body>
 
 </html>
