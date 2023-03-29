@@ -122,6 +122,17 @@ h1 {
     margin-bottom: 5%;
 }
 
+h2 {
+    font-size: 35px;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    float: left;
+}
+
+h3 {
+
+}
+
 .section_home {
     background-size: cover;
     background-image: url('../image/back.jpg');
