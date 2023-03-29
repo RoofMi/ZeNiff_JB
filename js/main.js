@@ -18,7 +18,7 @@ $(function(){
   var $scroll_bar_down = $('.scroll_bar');
   var $page = $('#section_about'); //색상이 변할 부분
   var $window = $(window);
-  var pageOffsetTop = $page.offset().top -60;//색상 변할 부분의 top값 구하기
+  var pageOffsetTop = $page.offset().top;//색상 변할 부분의 top값 구하기
   
   $window.resize(function(){ //반응형을 대비하여 리사이즈시 top값을 다시 계산
     pageOffsetTop = $page.offset().top;
