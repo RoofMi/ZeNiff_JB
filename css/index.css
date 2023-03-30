@@ -31,7 +31,7 @@ html {
 }
 
 header{
-    width:100%;
+    width: 100vw;
     height: 60px;
     background-color: rgb(255, 255, 255, .5);
     position: fixed;
@@ -123,6 +123,7 @@ h1 {
 }
 
 h2 {
+    width: 100%;
     font-size: 35px;
     margin-top: 3vh;
     margin-bottom: 3vh;
@@ -162,29 +163,30 @@ h3 {
 }
 
 .project {
-    margin: 30px auto;
+    margin: 30px 10vw;
     display: flex;
+    justify-content: center;
     padding: 35px;
     border-radius: 20px;
     background-color: rgb(207, 236, 243);
     box-shadow: 0px 4px 4px rgb(0, 0, 0, 25%);
-    min-width: 80vw;
 }
 
 .project_left {
     display: block;
+    width: 50%;
 }
 
 .project_right {
     display: block;
-    float: left;
     padding-left: 5%;
+    width: 50%;
 }
 
 .project_img {
     display: block;
     border-radius: 15px;
-    width: 450px;
+    width: 100%;
     margin-bottom: 25px;
 }
 
@@ -198,6 +200,10 @@ h3 {
     color: white;
     font-size: 20px;
     width: 100%;
+}
+
+dl {
+    display: block;
 }
 
 dt {
