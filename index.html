@@ -2,13 +2,14 @@
 <html lang="ko">
   
 <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-<script src="./js/main.js"></script>
+<script src="./js/index.js"></script>
 
 <head>
   <link rel="stylesheet" href="css/index.css" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Jeongbae Lee" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
   <title>About Me _ ZeNiff</title>
 </head>
 
@@ -18,19 +19,18 @@
     <nav>
       <ul class="topMenu">
         <li>
-          <a href="#section_home">ZeNiff</a>
+          <a onclick="scrollToSection('#section_home')">Home</a>
         <li>
-          <a href="#section_about">About</a>
+          <a onclick="scrollToSection('#section_about')">About</a>
         </li>
 
         <li>
-          <a href="#section_project">Project</a>
+          <a onclick="scrollToSection('#section_project')">Project</a>
         </li>
 
         <li>
-          <a href="#section_more">More</a>
+          <a onclick="scrollToSection('#section_more')">More</a>
         </li>
-        
       </ul>
     </nav>
 
@@ -42,6 +42,14 @@
   <div class="section">
     <a id="section_home"></a>
     <section class="section_home">
+      <div style="text-align: center;">
+        <h1 class="home_text">
+          작은 꿈부터 시작해<br>
+          큰 성공을 이루기 위해 달려가는 게임 개발자<br>
+          ZeNiff입니다 :&#41
+        </h1>
+        
+      </div>
     </section>
 
     <a id="section_about"></a>

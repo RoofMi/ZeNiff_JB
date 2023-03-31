@@ -62,7 +62,7 @@ nav {
     height: 40px;
 }
 
-@media screen and (max-width: 1480px) {
+@media (max-width: 1160px) {
     #topMenu > li {
         display: none;
     }
@@ -82,6 +82,8 @@ nav {
 }
 
 .topMenu>li>a:hover{
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
     color: rgb(59, 41, 254);
 }
 
@@ -117,9 +119,7 @@ nav {
 h1 {
     font-family: 'MYHaemalgeunSangsang';
     font-size: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5%;
+    margin: 5% auto;
 }
 
 h2 {
@@ -140,9 +140,38 @@ h3 {
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
     height: 100vh;
     max-height: 2040px;
+}
+
+.section_home > div > h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+}
+
+.section_home > div > h1 span {
+    display: inline-block;
+    animation: slideLeft 1.5s forwards;
+    opacity: 0;
+    letter-spacing: 0.1em;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+  
+@keyframes slideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(200px);
+    } 
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
 }
 
 .section_about {
@@ -200,6 +229,22 @@ h3 {
     color: white;
     font-size: 20px;
     width: 100%;
+}
+
+@media (max-width: 1160px){
+    .project {
+        flex-direction: column;
+    }
+
+    .project_left {
+        width: 100%;
+        height: 50%;
+    }
+
+    .project_right {
+        width: 100%;
+        height: 50%;
+    }
 }
 
 dl {
