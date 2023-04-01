@@ -62,12 +62,6 @@ nav {
     height: 40px;
 }
 
-@media (max-width: 1160px) {
-    #topMenu > li {
-        display: none;
-    }
-}
-
 .topMenu > li {
     display: inline-block;
     position: relative;
@@ -85,6 +79,13 @@ nav {
     cursor: pointer;
     transition: all 0.5s ease-in-out;
     color: rgb(59, 41, 254);
+}
+
+@media (max-width: 1160px){
+    .topMenu > li > a {
+        font-size: 13px;
+        padding: 10px 10px;
+    }
 }
 
 .scroll_bar {
@@ -158,6 +159,12 @@ h2 {
     letter-spacing: 0.1em;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
+@media (max-width: 1160px){
+    .section_home > div > h1 span {
+        font-size: 20px;
+    }
+}
   
 @keyframes slideLeft {
     from {
@@ -207,6 +214,18 @@ h2 {
     margin-top: 5%;
     margin-bottom: 1%;
     width: 50%;
+}
+
+@media (max-width: 1160px){
+    .about > dl {
+        width: 80%;
+    }
+    .about_text > dt {
+        font-size: 15px;
+    }
+    .about_text > dd {
+        font-size: 15px;
+    }
 }
 
 .section_project {
