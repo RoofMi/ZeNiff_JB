@@ -68,12 +68,12 @@ nav {
     }
 }
 
-.topMenu > li{
+.topMenu > li {
     display: inline-block;
     position: relative;
 }
 
-.topMenu > li > a{
+.topMenu > li > a {
     display: block;
     color: rgb(101, 93, 187);
     font-size: 17px;
@@ -81,7 +81,7 @@ nav {
     padding: 10px 25px;
 }
 
-.topMenu>li>a:hover{
+.topMenu>li>a:hover {
     cursor: pointer;
     transition: all 0.5s ease-in-out;
     color: rgb(59, 41, 254);
@@ -130,10 +130,6 @@ h2 {
     float: left;
 }
 
-h3 {
-
-}
-
 .section_home {
     background-size: cover;
     background-image: url('../image/back.jpg');
@@ -179,7 +175,38 @@ h3 {
     justify-content: center;
     flex-direction: column;
     background-color: rgb(236, 242, 255);
-    height: 100vh;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.about > dl {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 40%;
+}
+
+.about_text {
+    display: flex;
+}
+
+.about_text > dt {
+    color: rgb(130, 170, 227);
+    font-size: 22px;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    width: 50%;
+}
+
+.about_text > dd {
+    font-size: 22px;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    width: 50%;
 }
 
 .section_project {
@@ -275,6 +302,10 @@ dt {
     display: inline-block;
 }
 
+.more_icon > li > a {
+    text-decoration: none;
+}
+
 .more_icon > li > a > img {
     width: 65px;
     margin-left: 3vh;
@@ -282,29 +313,28 @@ dt {
 }
 
 .more_icon > li > a > p {
-    font-family: 'GangwonEduPowerExtraBoldA';
-    font-size: 2vh;
+    font-family: 'MYHaemalgeunSangsang';
+    font-size: 3vh;
 }
 
 footer{
     width: 100%;
-    height: 110%;
+    height: 105%;
     background-color: gray;  
     justify-content: center;
     font-size:15px;
 }
 
-footer>div{
+footer > div{
     display: inline-block;
     margin:20px;
    
 }
 
-footer>div:nth-child(1){
+footer > div:nth-child(1){
     padding-right:40px ;
-    border-right:4px solid #fff;    
 }
 
-footer>div>span{
+footer > div > span{
     color:white;
 }
