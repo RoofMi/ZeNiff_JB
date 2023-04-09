@@ -169,7 +169,7 @@ h2 {
 @keyframes slideLeft {
     from {
         opacity: 0;
-        transform: translateX(200px);
+        transform: translateX(100px);
     } 
     to {
       opacity: 1;
@@ -277,6 +277,17 @@ h2 {
     width: 100%;
 }
 
+dl {
+    display: block;
+}
+
+dt {
+    color: rgb(130, 170, 227);
+    font-size: 22px;
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
 @media (max-width: 1160px){
     .project {
         flex-direction: column;
@@ -291,17 +302,18 @@ h2 {
         width: 100%;
         height: 50%;
     }
-}
 
-dl {
-    display: block;
-}
+    .project_right > h2 {
+        font-size: 25px;
+    }
 
-dt {
-    color: rgb(130, 170, 227);
-    font-size: 22px;
-    margin-top: 5%;
-    margin-bottom: 1%;
+    .project_right > dl > dt {
+        font-size: 18px;
+    }
+
+    .project_right > dl > dd {
+        font-size: 13px;
+    }
 }
 
 .section_more {
@@ -333,6 +345,7 @@ dt {
 
 .more_icon > li > a > p {
     font-family: 'MYHaemalgeunSangsang';
+    color: black;
     font-size: 3vh;
 }
 
