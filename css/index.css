@@ -150,6 +150,7 @@ h2 {
     font-size: 50px;
     letter-spacing: 1px;
     color: rgb(255, 255, 255);
+    overflow-x: hidden;
 }
 
 .section_home > div > h1 span {
